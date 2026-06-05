@@ -1,0 +1,15 @@
+name: Asset Pipeline CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  writer:
+    uses: ./.github/workflows/writer.yml
+  drawer:
+    uses: ./.github/workflows/drawer.yml
+  sound:
+    uses: ./.github/workflows/sound.yml
+  conductor:
+    uses: ./.github/workflows/conductor.yml
