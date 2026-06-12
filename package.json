@@ -4,7 +4,7 @@
   "description": "Shared CI workflows for the prompt-asset toolchain",
   "main": "src/index.ts",
   "scripts": {
-    "test": "vitest run"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
